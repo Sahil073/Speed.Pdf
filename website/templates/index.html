@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot to PDF</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Screenshot to PDF Converter</h1>
+        
+        <label for="numPages">Enter Number of Pages:</label>
+        <input type="number" id="numPages" min="1" placeholder="Enter pages">
+        
+        <label for="pdfName">Enter PDF Name:</label>
+        <input type="text" id="pdfName" placeholder="Enter file name">
+
+        <button id="startCapture">Start Screenshot</button>
+        
+        <div id="status">Waiting for input...</div>
+
+        <div id="downloadSection" style="display: none;">
+            <h2>Download Your File</h2>
+            <button id="downloadPDF">Download PDF</button>
+            <button id="downloadWord">Download Word</button>
+        </div>
+    </div>
+
+    <script src="../static/logic.js"></script>
+</body>
+</html>
